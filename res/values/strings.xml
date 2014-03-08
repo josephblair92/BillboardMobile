@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Billboard Mobile</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="bydate_button">Search by Date</string>
+    <string name="reverselookup_button">Reverse Lookup</string>
+    <string name="welcome_label">Welcome to Billboard Mobile!</string>
+    <string name="title_activity_date_search">DateSearchActivity</string>
+    <string name="datesearch_header_label">Search by Date</string>
+    <string name="singleschart_radio">Billboard Hot 100</string>
+    <string name="albumschart_radio">Billboard 200</string>
+    <string name="search_button">Search</string>
+    <string name="title_activity_chart_display">ChartDisplayActivity</string>
+    <string name="title_activity_reverse_lookup">ReverseLookupActivity</string>
+    <string name="reverselookup_header_label">Reverse Lookup</string>
+    <string name="artist_label">Artist:</string>
+    <string name="charttype_label">Chart Type</string>
+    <string name="chartdate_label">Chart Date</string>
+    <string name="charthistory_label">Chart History</string>
+    <string name="entryposition_label">Entry Position:</string>
+    <string name="peakposition_label">Peak Position:</string>
+    <string name="dropoffposition_label">Dropoff Position:</string>
+
+    <string-array name="searchspinner_array">
+        <item>Song</item>
+        <item>Album</item>
+    </string-array>
+
+    <string name="title_activity_search_results">SearchResultsActivity</string>
+
+</resources>

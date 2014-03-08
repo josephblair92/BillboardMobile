@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ReverseLookupActivity" >
+    
+    <TextView
+        android:id="@+id/reverseLookupHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/reverselookup_header_label"
+        android:layout_marginBottom="50dp"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/artistLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/reverseLookupHeader"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:text="@string/artist_label" />
+
+    <EditText
+        android:id="@+id/artistEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/artistLabel"
+        android:layout_below="@+id/artistLabel"
+        android:layout_marginBottom="40dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/searchSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/artistLabel"
+        android:layout_below="@+id/artistEditText"
+        android:layout_marginBottom="20dp"
+        android:drawSelectorOnTop="false"
+        android:textSize="30sp"
+        android:entries="@array/searchspinner_array" />
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/artistLabel"
+        android:layout_below="@+id/searchSpinner"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/reverseLookup_searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:text="@string/search_button" />
+
+</RelativeLayout>

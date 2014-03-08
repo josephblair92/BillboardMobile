@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DateSearchActivity" >
+
+    <TextView
+        android:id="@+id/dateSearchHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/datesearch_header_label"
+        android:layout_marginBottom="35dp"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateSearchHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:maxDate="12/14/2013"
+        android:minDate="07/25/1940"
+        android:calendarViewShown="false" />
+
+    <RadioGroup
+        android:id="@+id/chartRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dateSearch_searchButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" >
+
+        <RadioButton
+            android:id="@+id/singlesRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/singleschart_radio"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/albumsRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/albumschart_radio"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/dateSearch_searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/search_button" />
+
+
+</RelativeLayout>
